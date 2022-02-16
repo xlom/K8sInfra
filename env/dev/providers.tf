@@ -15,10 +15,10 @@ terraform {
   #NB: These values may be different depending on your setup.
   # See docs/Infrastructure.md
   backend "azurerm" {
-    resource_group_name  = "Demo-TF"
-    storage_account_name = "k8sdemoterraform"
-    container_name       = "terraform-backend"
-    key                  = "dev.terraform.tfstate"
+    resource_group_name  = "tfstate"
+    storage_account_name = "tfstatewi8ct"
+    container_name       = "tfstate"
+    key                  = "terraform.tfstate"
   }
 }
 
